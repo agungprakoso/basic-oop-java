@@ -13,17 +13,22 @@ public class Test {
 		a.berkembangbiak();
 		a.bernapas();
 		a.makan();
+		a.tumbuh();
 
 		BurungElang b = new BurungElang();
 		b.berkembangbiak();
 		b.bernapas();
 		b.makan();
 
-
 		Pinguin d = new Pinguin();
 		d.berkembangbiak();
 		d.bernafas();
 		d.makan();
+		
+		Ular c = new Ular();
+		c.bernapas();
+		c.makan();
+		c.berkembangbiak();
 	}
 
 
