@@ -14,6 +14,13 @@ public class Test {
 		a.bernapas();
 		a.makan();
 
+		burungElang b = new burungElang();
+		b.berkembangbiak();
+		b.bernapas();
+		b.makan();
+
+
 	}
+
 
 }
