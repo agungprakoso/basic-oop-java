@@ -1,6 +1,6 @@
 package trainingInheritance;
 
-public class sapi extends makhlukHidup{
+public class Sapi extends MakhlukHidup{
 
 	public void berkembangbiak(){
 		System.out.println("Sapi berkembangbiak  dengan cara melahirkan");

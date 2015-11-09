@@ -4,22 +4,26 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		makhlukHidup animal = new makhlukHidup();
+		MakhlukHidup animal = new MakhlukHidup();
 		animal.berkembangbiak();
 		animal.bernapas();
 		animal.makan();
 		
-		sapi a = new sapi();
+		Sapi a = new Sapi();
 		a.berkembangbiak();
 		a.bernapas();
 		a.makan();
 
-		burungElang b = new burungElang();
+		BurungElang b = new BurungElang();
 		b.berkembangbiak();
 		b.bernapas();
 		b.makan();
 
 
+		Pinguin d = new Pinguin();
+		d.berkembangbiak();
+		d.bernafas();
+		d.makan();
 	}
 
 

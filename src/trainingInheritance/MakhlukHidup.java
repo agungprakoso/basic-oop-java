@@ -1,6 +1,6 @@
 package trainingInheritance;
 
-public class makhlukHidup {
+public class MakhlukHidup {
 	String alatPernapasan;
 	String makanan;
 	String caraBerkembangBiak;

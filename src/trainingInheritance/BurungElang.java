@@ -3,7 +3,7 @@ package trainingInheritance;
 /**
  * Created by sgh211qgsh on 09/11/15.
  */
-public class BurungElang extends makhlukHidup{
+public class BurungElang extends MakhlukHidup{
 
     public void bernapas (){System.out.println("Burung Elang bernapas dengan paru paru");}
 
