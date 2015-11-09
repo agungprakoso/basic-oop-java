@@ -33,6 +33,19 @@ public class Test {
 		c.bernapas();
 		c.makan();
 		c.berkembangbiak();
+		System.out.println();
+		
+		MakhlukHidup paus = new Paus();
+		paus.bernapas();
+		paus.makan();
+		paus.berkembangbiak();
+		System.out.println();
+		
+		Paus paus1 = new Paus();
+		paus1.bernapas();
+		paus1.makan();
+		paus1.berkembangbiak();
+		paus1.jenis();
 	}
 
 
