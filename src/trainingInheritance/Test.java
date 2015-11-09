@@ -46,6 +46,7 @@ public class Test {
 		paus1.makan();
 		paus1.berkembangbiak();
 		paus1.jenis();
+		System.out.println();
 	}
 
 
