@@ -12,10 +12,13 @@ public class MakhlukHidup {
 	public void makan(){
 		System.out.println("Hidup dengan memakan makanan");
 	}
-	
-	
+		
 	public void berkembangbiak(){
 		System.out.println("Berkembangbiak ");
+	}
+	
+	public void tumbuh(){
+		System.out.println("makhluk hidup tumbuh besar ");
 	}
 
 }
