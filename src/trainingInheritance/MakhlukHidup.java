@@ -5,6 +5,10 @@ public class MakhlukHidup {
 	String makanan;
 	String caraBerkembangBiak;
 	
+	public void tumbuh(){
+		System.out.println("ciri-ciri makhluk hidup adalah tumbuh ");
+	}
+	
 	public void bernapas(){
 		System.out.println("makhluk hidup bernafas untuk hidup ");
 	}
