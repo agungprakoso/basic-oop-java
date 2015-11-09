@@ -1,0 +1,2 @@
+# trainingInheritance
+learn basic inheritance
