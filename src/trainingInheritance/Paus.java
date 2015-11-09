@@ -15,7 +15,7 @@ public class Paus extends MakhlukHidup{
 	}
 	
 	public void jenis(){
-		System.out.println("Paus merupakan mamalia");
+		System.out.println("Paus merupakan hewan mamalia");
 	}
 
 }
