@@ -13,9 +13,6 @@ public class Test {
 		a.berkembangbiak();
 		a.bernapas();
 		a.makan();
-		a.tumbuh();
-		
-		
 
 		BurungElang b = new BurungElang();
 		b.berkembangbiak();
