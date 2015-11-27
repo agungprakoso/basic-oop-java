@@ -40,10 +40,21 @@ public class SoftwareEngineer extends Employee {
 		List.add(newBugs);
 	}
 	
-	public int getTotalScore(ArrayList<Bugs> contacs){
+	public int getNumberOfBugs(ArrayList<Bugs> list){
+		return list.size();
+	}
+	
+	public void listAllBugs(ArrayList<Bugs> list){
+		for(int i = 0 ; i < list.size(); i ++){
+			listBugs= list.get(i);
+			System.out.println ("ID Bugs  : "+ listBugs.getId_Bugs() + " || "+ "Priority : "+ listBugs.getPriority());
+		}
+	}
+	
+	public int getTotalScore(ArrayList<Bugs> list){
 		int totalScore = 0;
-		for(int i = 0 ; i < contacs.size(); i ++){
-			listBugs= contacs.get(i);
+		for(int i = 0 ; i < list.size(); i ++){
+			listBugs= list.get(i);
 			totalScore = totalScore + listBugs.getScore(listBugs.getPriority());
 		}
 		return totalScore;
@@ -57,7 +68,7 @@ public class SoftwareEngineer extends Employee {
 	
 
 	public long getSalary(int totalScore) {
-		long seSalary = super.getSalary() + 1300000 + (totalScore*10000) ;
+		long seSalary = getSalary() + (totalScore*10000) ;
 		return seSalary;
 	}
 	

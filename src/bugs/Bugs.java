@@ -4,7 +4,7 @@ public class Bugs {
 	private String id_Bugs;
 	private int priority;
 	
-	public Bugs(String id, int Priority){
+	public Bugs(String id, int priority){
 		this.id_Bugs = id;
 		this.priority = priority;
 	}

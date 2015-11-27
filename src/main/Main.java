@@ -35,7 +35,9 @@ public class Main {
 		zen.addNewBugs("OG1", 3);
 		zen.addNewBugs("OG2", 5);
 		zen.addNewBugs("OG4", 2);
-		//zen.addNewBugs("OG3", 1);
+		zen.addNewBugs("OG3", 1);
+		System.out.println("Number Of bugsDone : "+ zen.getNumberOfBugs(zen.getList()));
+		zen.listAllBugs(zen.getList());
 		int score = zen.getTotalScore(zen.getList());
 		System.out.println("Score total : " + score);
 		System.out.println("Salary "+ zen.getName() + " : "+zen.getSalary(score));
