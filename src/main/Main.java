@@ -1,6 +1,7 @@
 package main;
 import invetories.Laptop;
 import people.QAEngineer;
+import people.SoftwareEngineer;
 
 
 public class Main {
@@ -27,5 +28,16 @@ public class Main {
 		
 		isRunning =  asus.runApplication("photoshop");
 		System.out.println("Is the app running? "+isRunning);
+		
+		SoftwareEngineer zen = new SoftwareEngineer("Zaenal", "001", 10, 2015, 4500000);
+		System.out.println("Employee name : " + zen.getName());
+		System.out.println("Basic Salary : "+ zen.getSalary());
+		zen.addNewBugs("OG1", 3);
+		zen.addNewBugs("OG2", 5);
+		zen.addNewBugs("OG4", 2);
+		//zen.addNewBugs("OG3", 1);
+		int score = zen.getTotalScore(zen.getList());
+		System.out.println("Score total : " + score);
+		System.out.println("Salary "+ zen.getName() + " : "+zen.getSalary(score));
 	}
 }

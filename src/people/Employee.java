@@ -10,7 +10,7 @@ public class Employee {
 	protected int totalAbsence;
 	
 	public Employee(String name, String id){
-		this.name = name;
+		this.setName(name);
 		this.id = id;
 	}
 	
@@ -54,6 +54,14 @@ public class Employee {
 	public long getTotalSalary() {
 		long totalSalary = getSalary() - getDeductedSalary();
 		return totalSalary;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 }

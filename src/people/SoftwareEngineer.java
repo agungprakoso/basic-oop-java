@@ -1,7 +1,22 @@
 package people;
 
-public class SoftwareEngineer extends Employee {
+import java.util.ArrayList;
 
+import bugs.Bugs;
+
+public class SoftwareEngineer extends Employee {
+	ArrayList<Bugs> List = new ArrayList<Bugs>();
+	
+	public ArrayList<Bugs> getList() {
+		return List;
+	}
+
+	public void setList(ArrayList<Bugs> list) {
+		List = list;
+	}
+
+
+	Bugs listBugs;
 	
 	public SoftwareEngineer(String name, String id) {
 		super(name, id);
@@ -20,9 +35,29 @@ public class SoftwareEngineer extends Employee {
 		this(name, id, age, year);
 	}
 
+	public void addNewBugs(String id_bugs, int priority){
+		Bugs newBugs = new Bugs(id_bugs, priority);
+		List.add(newBugs);
+	}
+	
+	public int getTotalScore(ArrayList<Bugs> contacs){
+		int totalScore = 0;
+		for(int i = 0 ; i < contacs.size(); i ++){
+			listBugs= contacs.get(i);
+			totalScore = totalScore + listBugs.getScore(listBugs.getPriority());
+		}
+		return totalScore;
+	}
+	
 	@Override
-	protected long getSalary() {
+	public long getSalary() {
 		long seSalary = super.getSalary() + 1300000;
+		return seSalary;
+	}
+	
+
+	public long getSalary(int totalScore) {
+		long seSalary = super.getSalary() + 1300000 + (totalScore*10000) ;
 		return seSalary;
 	}
 	
