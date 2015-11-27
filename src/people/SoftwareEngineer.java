@@ -6,6 +6,25 @@ import bugs.Bugs;
 
 public class SoftwareEngineer extends Employee {
 	ArrayList<Bugs> List = new ArrayList<Bugs>();
+	Bugs listBugs;
+	int age;
+	int year;
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}	
 	
 	public ArrayList<Bugs> getList() {
 		return List;
@@ -15,9 +34,6 @@ public class SoftwareEngineer extends Employee {
 		List = list;
 	}
 
-
-	Bugs listBugs;
-	
 	public SoftwareEngineer(String name, String id) {
 		super(name, id);
 		//create many more things
@@ -26,6 +42,8 @@ public class SoftwareEngineer extends Employee {
 	
 	public SoftwareEngineer(String name, String id, int age, int year) {
 		this(name, id);
+		this.age = age;
+		this.year = year;
 		//1-100
 		//101-300
 		//do something with age and year
@@ -33,6 +51,8 @@ public class SoftwareEngineer extends Employee {
 	
 	public SoftwareEngineer(String name, String id, int age, int year, int salary) {
 		this(name, id, age, year);
+		this.age = age;
+		this.year = year;
 	}
 
 	public void addNewBugs(String id_bugs, int priority){

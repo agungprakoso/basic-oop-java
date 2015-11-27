@@ -30,13 +30,15 @@ public class Main {
 		System.out.println("Is the app running? "+isRunning);
 		
 		SoftwareEngineer zen = new SoftwareEngineer("Zaenal", "001", 10, 2015, 4500000);
-		System.out.println("Employee name : " + zen.getName());
-		System.out.println("Basic Salary : "+ zen.getSalary());
+		System.out.println("Employee Name : " + zen.getName());
+		System.out.println("Employee Age  : "+ zen.getAge());
+		System.out.println("Basic Salary  : "+ zen.getSalary());
 		zen.addNewBugs("OG1", 3);
 		zen.addNewBugs("OG2", 5);
 		zen.addNewBugs("OG4", 2);
 		zen.addNewBugs("OG3", 1);
 		System.out.println("Number Of bugsDone : "+ zen.getNumberOfBugs(zen.getList()));
+		System.out.println("list Of Bugs : ");
 		zen.listAllBugs(zen.getList());
 		int score = zen.getTotalScore(zen.getList());
 		System.out.println("Score total : " + score);
