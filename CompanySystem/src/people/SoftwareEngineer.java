@@ -1,14 +1,15 @@
 package people;
 
 import java.util.ArrayList;
-
 import bugs.Bugs;
+import java.util.Calendar;
 
 public class SoftwareEngineer extends Employee {
 	ArrayList<Bugs> List = new ArrayList<Bugs>();
 	Bugs listBugs;
 	int age;
 	int year;
+	int payment;
 	
 	public int getAge() {
 		return age;
@@ -25,7 +26,25 @@ public class SoftwareEngineer extends Employee {
 	public void setYear(int year) {
 		this.year = year;
 	}	
-	
+
+	public int getPayment() {
+		return payment;
+	}
+
+	public void setPayment(int payment) {
+		this.payment = payment;
+	}	
+		
+	public long getBonus(){
+		long bonus = 0;
+		int currentYear = Calendar.getInstance().get(Calendar.YEAR);
+		if(currentYear - this.year >= 5){
+			bonus = 500000;			
+			return bonus;
+		}
+		return 0;
+	}
+
 	public ArrayList<Bugs> getList() {
 		return List;
 	}
@@ -49,10 +68,11 @@ public class SoftwareEngineer extends Employee {
 		//do something with age and year
 	}
 	
-	public SoftwareEngineer(String name, String id, int age, int year, int salary) {
+	public SoftwareEngineer(String name, String id, int age, int year, int payment) {
 		this(name, id, age, year);
 		this.age = age;
 		this.year = year;
+		this.payment = payment;
 	}
 
 	public void addNewBugs(String id_bugs, int priority){
@@ -87,9 +107,13 @@ public class SoftwareEngineer extends Employee {
 	}
 	
 
-	public long getSalary(int totalScore) {
-		long seSalary = getSalary() + (totalScore*10000) ;
+	public long getSalaries(long totalScore) {
+		long seSalary = getSalary() + (totalScore*10000);
 		return seSalary;
 	}
 	
+	public long totPayment(long totalScore){
+		long total = getSalaries(totalScore *10000) + getBonus();
+		return total;
+	}
 }

@@ -42,9 +42,10 @@ public class Main {
 		zen.listAllBugs(zen.getList());
 		int score = zen.getTotalScore(zen.getList());
 		System.out.println("Score total : " + score);
-		System.out.println("Salary "+ zen.getName() + " : "+zen.getSalary(score));
+		System.out.println("Salary "+ zen.getName() + " : "+zen.getSalaries(score));
         
-        SoftwareEngineer dr = new SoftwareEngineer("Denny", "002", 22, 2015, 4300000);
+
+		SoftwareEngineer dr = new SoftwareEngineer("Denny", "002", 22, 2015, 4300000);
 		System.out.println("Employee Name : " + dr.getName());
 		System.out.println("Employee Age  : "+ dr.getAge());
 		System.out.println("Basic Salary  : "+ dr.getSalary());
@@ -55,22 +56,20 @@ public class Main {
 		System.out.println("Number Of Bugs Done : "+ dr.getNumberOfBugs(dr.getList()));
 		System.out.println("List Of Bugs : ");
 		dr.listAllBugs(dr.getList());
-		score = dr.getTotalScore(dr.getList());
-		System.out.println("Score Total : " + score);
-		System.out.println("Salary "+ dr.getName() + " : "+dr.getSalary(score));
+		int score2 = dr.getTotalScore(dr.getList());
+		System.out.println("Score Total : " + score2);
+		System.out.println("Salary "+ dr.getName() + " : "+dr.getSalaries(score2));
 
-		SoftwareEngineer faf = new SoftwareEngineer("Fhadel", "010", 21, 2015, 4000000);
+		SoftwareEngineer faf = new SoftwareEngineer("Fhadel", "010", 21, 2015, 400000);
 		faf.addNewBugs("OG6",1);
 		faf.addNewBugs("OG7",2);
+		System.out.println("");
 		System.out.println("Employee Name :" + faf.getName());
 		System.out.println("Basic Salary :" + faf.getSalary());
 		System.out.println("List Bugs assign to Fhadel : " + faf.getNumberOfBugs(faf.getList()));
 		int score1 = faf.getTotalScore(faf.getList());
-		System.out.println(faf.getName() + "has fixed" + faf.getNumberOfBugs(faf.getList())+ ",Total score : " +score1);
-		System.out.println("Total Salary for" +faf.getName()+ " : " +faf.getSalary(score));
-
-
-		System.out.println("Total salary he got is" );
-			
+		System.out.println(faf.getName() + " has fixed " + faf.getNumberOfBugs(faf.getList())+ " Bugs ,Total score : " + score1);
+		long totalPayment = faf.totPayment(score1); 
+		System.out.println("Total Salary for" + faf.getName() + " : " +totalPayment);
 	}
 }

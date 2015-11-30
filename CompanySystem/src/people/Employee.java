@@ -26,6 +26,8 @@ public class Employee {
 		handphone.callSomeone(number);
 		calendar.createEvent("19112015", number);
 	}
+
+
 	
 	/**
 	 * @return UMR Jakarta
@@ -63,5 +65,5 @@ public class Employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 }
