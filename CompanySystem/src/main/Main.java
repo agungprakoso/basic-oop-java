@@ -55,7 +55,7 @@ public class Main {
 		System.out.println("Number Of Bugs Done : "+ dr.getNumberOfBugs(dr.getList()));
 		System.out.println("List Of Bugs : ");
 		dr.listAllBugs(dr.getList());
-		int score = dr.getTotalScore(dr.getList());
+		score = dr.getTotalScore(dr.getList());
 		System.out.println("Score Total : " + score);
 		System.out.println("Salary "+ dr.getName() + " : "+dr.getSalary(score));
 
@@ -66,11 +66,11 @@ public class Main {
 		System.out.println("Basic Salary :" + faf.getSalary());
 		System.out.println("List Bugs assign to Fhadel : " + faf.getNumberOfBugs(faf.getList()));
 		int score1 = faf.getTotalScore(faf.getList());
-		System.out.println(faf.getName() + "has fixed" + getNumberOfBugs(faf.getList()) ",Total score : " +score1);
-		System.out.println("Total Salary for" +faf.getName() " : " +faf.getSalary(score));
+		System.out.println(faf.getName() + "has fixed" + faf.getNumberOfBugs(faf.getList())+ ",Total score : " +score1);
+		System.out.println("Total Salary for" +faf.getName()+ " : " +faf.getSalary(score));
 
 
-		System.out.println("Total salary he got is" )
+		System.out.println("Total salary he got is" );
 			
 	}
 }
