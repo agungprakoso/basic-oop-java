@@ -58,5 +58,19 @@ public class Main {
 		int score = dr.getTotalScore(dr.getList());
 		System.out.println("Score Total : " + score);
 		System.out.println("Salary "+ dr.getName() + " : "+dr.getSalary(score));
+
+		SoftwareEngineer faf = new SoftwareEngineer("Fhadel", "010", 21, 2015, 4000000);
+		faf.addNewBugs("OG6",1);
+		faf.addNewBugs("OG7",2);
+		System.out.println("Employee Name :" + faf.getName());
+		System.out.println("Basic Salary :" + faf.getSalary());
+		System.out.println("List Bugs assign to Fhadel : " + faf.getNumberOfBugs(faf.getList()));
+		int score1 = faf.getTotalScore(faf.getList());
+		System.out.println(faf.getName() + "has fixed" + getNumberOfBugs(faf.getList()) ",Total score : " +score1);
+		System.out.println("Total Salary for" +faf.getName() " : " +faf.getSalary(score));
+
+
+		System.out.println("Total salary he got is" )
+			
 	}
 }
