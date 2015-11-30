@@ -43,5 +43,20 @@ public class Main {
 		int score = zen.getTotalScore(zen.getList());
 		System.out.println("Score total : " + score);
 		System.out.println("Salary "+ zen.getName() + " : "+zen.getSalary(score));
+        
+        SoftwareEngineer dr = new SoftwareEngineer("Denny", "002", 22, 2015, 4300000);
+		System.out.println("Employee Name : " + dr.getName());
+		System.out.println("Employee Age  : "+ dr.getAge());
+		System.out.println("Basic Salary  : "+ dr.getSalary());
+		dr.addNewBugs("OG1", 3);
+		dr.addNewBugs("OG2", 3);
+		dr.addNewBugs("OG4", 3);
+		dr.addNewBugs("OG3", 2);
+		System.out.println("Number Of Bugs Done : "+ dr.getNumberOfBugs(dr.getList()));
+		System.out.println("List Of Bugs : ");
+		dr.listAllBugs(dr.getList());
+		int score = dr.getTotalScore(dr.getList());
+		System.out.println("Score Total : " + score);
+		System.out.println("Salary "+ dr.getName() + " : "+dr.getSalary(score));
 	}
 }
